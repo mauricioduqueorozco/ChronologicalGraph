@@ -1,0 +1,28 @@
+{
+  "name": "chronologicalgraph",
+  "version": "1.0.0",
+  "description": "This is a graphic library to create weekly calendar like Gant for programmer activities ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauricioduqueorozco/ChronologicalGraph.git"
+  },
+  "keywords": [
+    "Gant",
+    "Chronological",
+    "Activities",
+    "planifier",
+    "canvas",
+    "html",
+    "js"
+  ],
+  "author": "Mauricio Duque -- Agmatice company -- <mauricio.duque.eje@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauricioduqueorozco/ChronologicalGraph/issues"
+  },
+  "homepage": "https://github.com/mauricioduqueorozco/ChronologicalGraph#readme"
+}
