@@ -1,0 +1,118 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/mauricio/.nvm/versions/v6.10.2/bin/node',
+1 verbose cli   '/Users/mauricio/.nvm/versions/v6.10.2/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/mauricio/Documents/Developer/ChronologicalGraph/ChronologicalGraph',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/mauricio/.npm/chronologicalgraph/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/mauricio/.npm correctMkdir not in flight; initializing
+10 info lifecycle chronologicalgraph@1.0.0~prepublish: chronologicalgraph@1.0.0
+11 silly lifecycle chronologicalgraph@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/mauricio/.npm/chronologicalgraph/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/mauricio/Documents/Developer/ChronologicalGraph/ChronologicalGraph' ]
+13 verbose tarball /Users/mauricio/.npm/chronologicalgraph/1.0.0/package.tgz
+14 verbose folder /Users/mauricio/Documents/Developer/ChronologicalGraph/ChronologicalGraph
+15 verbose addLocalTarball adding from inside cache /Users/mauricio/.npm/chronologicalgraph/1.0.0/package.tgz
+16 verbose correctMkdir /Users/mauricio/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd chronologicalgraph@1.0.0
+18 verbose afterAdd /Users/mauricio/.npm/chronologicalgraph/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/mauricio/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/mauricio/.npm/chronologicalgraph/1.0.0/package/package.json written
+21 silly publish { name: 'chronologicalgraph',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'This is a graphic library to create weekly calendar like Gant for programmer activities ',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mauricioduqueorozco/ChronologicalGraph.git' },
+21 silly publish   keywords:
+21 silly publish    [ 'Gant',
+21 silly publish      'Chronological',
+21 silly publish      'Activities',
+21 silly publish      'planifier',
+21 silly publish      'canvas',
+21 silly publish      'html',
+21 silly publish      'js' ],
+21 silly publish   author:
+21 silly publish    { name: 'Mauricio Duque -- Agmatice company --',
+21 silly publish      email: 'mauricio.duque.eje@icloud.com' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/mauricioduqueorozco/ChronologicalGraph/issues' },
+21 silly publish   homepage: 'https://github.com/mauricioduqueorozco/ChronologicalGraph#readme',
+21 silly publish   readme: '# ChronologicalGraph\nIt is a chronological calendar weekly Graphical on Canvas, full customizable\n\nPure Javascript library working on canvas.\n\n# Constructor\n```\nvar chronological = new ChronologicalGraph()\n```\nBrowser\n\n```\n<body>\n  <div style="height:250px; width:650px; overflow-y: scroll; border:1px solid #000000;">\n    <canvas id="canvas"></canvas>\n  </div>\n</body>\n<script type="text/javascript" src="./index.js"></script>\n```\n\n# Add activities\n\n```\nchronological.addActivity({\n  name : "Name"\n  duration : [Integer], // Weeks\n  start : [Integer] // Week of year\n})\n```\n# Add events\n```\nchronological.canvas.addEventListener(\'click\', (event) => {\n  chronological.setXY(event)\n}, false);\n```\n\n# Setting\n\nSize of step\n\n```\nchronological.stepSize = 40 //px\n```\n\nZoom zoomFactor\n```\nchronological.zoomFactor = 0.7\n```\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'f354a2f9128abb3f2ed35da8f4c7fcb8f16c583a',
+21 silly publish   _id: 'chronologicalgraph@1.0.0',
+21 silly publish   _shasum: '9e348d53e9a324a10e5022dda7c258bd1d0f4aeb',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name chronologicalgraph
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'chronologicalgraph',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'chronologicalgraph',
+26 silly mapToRegistry   name: 'chronologicalgraph',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/chronologicalgraph
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/mauricio/.npm/chronologicalgraph/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/chronologicalgraph
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 10:36:15 AM
+33 verbose request using bearer token for auth
+34 verbose request id 009801fad01cd060
+35 http request PUT https://registry.npmjs.org/chronologicalgraph
+36 http 403 https://registry.npmjs.org/chronologicalgraph
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '104',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Fri, 24 Nov 2017 15:36:17 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-mia17626-MIA',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1511537776.421449,VS0,VE693',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/mauricio/.npm/registry.npmjs.org/chronologicalgraph on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : chronologicalgraph
+40 verbose stack     at makeError (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/mauricio/.nvm/versions/v6.10.2/lib/node_modules/npm/node_modules/request/request.js:969:12)
+41 verbose statusCode 403
+42 verbose pkgid chronologicalgraph
+43 verbose cwd /Users/mauricio/Documents/Developer/ChronologicalGraph/ChronologicalGraph
+44 error Darwin 17.2.0
+45 error argv "/Users/mauricio/.nvm/versions/v6.10.2/bin/node" "/Users/mauricio/.nvm/versions/v6.10.2/bin/npm" "publish"
+46 error node v6.10.2
+47 error npm  v3.10.10
+48 error code E403
+49 error you must verify your email before publishing a new package: https://www.npmjs.com/email-edit : chronologicalgraph
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
